@@ -3,19 +3,80 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    
+
     <welcome-file-list>
         <welcome-file>/html/frame.html</welcome-file>
     </welcome-file-list>
-    
+
     <servlet>
         <servlet-name>StudentServlet</servlet-name>
         <servlet-class>com.practice.servlet.StudentServlet</servlet-class>
     </servlet>
-    
+
     <servlet-mapping>
         <servlet-name>StudentServlet</servlet-name>
         <url-pattern>/student</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentServlet1</servlet-name>
+        <servlet-class>com.practice.servlet.StudentServlet1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentServlet1</servlet-name>
+        <url-pattern>/student1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentServlet2</servlet-name>
+        <servlet-class>com.practice.servlet.StudentServlet2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentServlet2</servlet-name>
+        <url-pattern>/student2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentServlet4</servlet-name>
+        <servlet-class>com.practice.servlet.StudentServlet4</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentServlet4</servlet-name>
+        <url-pattern>/student4</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentServlet5</servlet-name>
+        <servlet-class>com.practice.servlet.StudentServlet5</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentServlet5</servlet-name>
+        <url-pattern>/student/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentServlet5copy</servlet-name>
+        <servlet-class>com.practice.servlet.StudentServlet5</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentServlet5copy</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentServlet6</servlet-name>
+        <servlet-class>com.practice.servlet.StudentServlet6</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentServlet6</servlet-name>
+        <url-pattern>/price/*</url-pattern>
     </servlet-mapping>
 
 </web-app>
