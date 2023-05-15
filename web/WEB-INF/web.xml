@@ -79,4 +79,32 @@
         <url-pattern>/price/*</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ServletDemo8</servlet-name>
+        <servlet-class>com.practice.servlet.ServletDemo8</servlet-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>servletInfo</param-name>
+            <param-value>This is Demo8</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletDemo8</servlet-name>
+        <url-pattern>/demo8</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletDemo9</servlet-name>
+        <servlet-class>com.practice.servlet.ServletDemo9</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletDemo9</servlet-name>
+        <url-pattern>/demo9</url-pattern>
+    </servlet-mapping>
+
 </web-app>
